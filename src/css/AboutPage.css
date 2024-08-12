@@ -1,0 +1,195 @@
+/* Rajveer kaur 8871247 */
+.about-us-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-us-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-us-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.about-us-title {
+  margin-bottom: 20px;
+}
+
+.about-us-title-main {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.about-us-title-sub {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  color: #7c3aed;
+}
+
+.about-us-description {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.about-us-cta {
+  display: flex;
+  gap: 20px;
+}
+
+.about-us-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-us-button.primary {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.about-us-button.primary:hover {
+  background-color: #6d28d9;
+}
+
+.about-us-button.secondary {
+  background-color: #e5e7eb;
+  color: #1e3a8a;
+}
+
+.about-us-button.secondary:hover {
+  background-color: #d1d5db;
+}
+
+.about-us-image {
+  flex: 1;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-us-mission {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-us-mission h2,
+.about-us-values h2 {
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.about-us-mission p {
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.about-us-values h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-us-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.about-us-value-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-us-value-item:hover {
+  transform: translateY(-5px);
+}
+
+.about-us-value-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background-color: #7c3aed;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-value-icon svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.about-us-value-item h3 {
+  font-size: 24px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.about-us-value-item p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.about-us-learn-more {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.about-us-learn-more:hover {
+  color: #6d28d9;
+}
+
+@media (max-width: 768px) {
+  .about-us-hero {
+    flex-direction: column;
+  }
+
+  .about-us-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .about-us-title-main,
+  .about-us-title-sub {
+    font-size: 36px;
+  }
+
+  .about-us-cta {
+    flex-direction: column;
+  }
+
+  .about-us-button {
+    width: 100%;
+  }
+
+  .about-us-values-grid {
+    grid-template-columns: 1fr;
+  }
+}
