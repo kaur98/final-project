@@ -1,0 +1,57 @@
+/* Pawan Gajjar 8890300 */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-logo-square {
+  background-color: #7c3aed;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.navbar-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.navbar-nav a {
+  color: #1e3a8a;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    /* display: block; */
+    /* text-align: center; */
+  }
+  .navbar-logo {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav a {
+    margin-right: 0px;
+    margin: 0px 10px;
+  }
+}

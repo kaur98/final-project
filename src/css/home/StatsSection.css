@@ -1,0 +1,92 @@
+/* Pawan Gajjar 8890300 */
+.hotel-hero {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.hotel-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hotel-hero-image {
+  flex: 1;
+}
+
+.hotel-hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-hero-content {
+  flex: 1;
+}
+
+.hotel-hero-title {
+  font-size: 3rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hotel-hero-description {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hotel-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.hotel-hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-hero-stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7c3aed;
+}
+
+.hotel-hero-stat-label {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+@media (max-width: 1024px) {
+  .hotel-hero-container {
+    flex-direction: column;
+  }
+
+  .hotel-hero-image,
+  .hotel-hero-content {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hotel-hero {
+    padding: 2rem 1rem;
+  }
+
+  .hotel-hero-title {
+    font-size: 2rem;
+  }
+
+  .hotel-hero-stats {
+    /* grid-template-columns: 1fr; */
+    gap: 1rem;
+    text-align: center;
+  }
+}

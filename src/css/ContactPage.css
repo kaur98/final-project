@@ -1,0 +1,128 @@
+/* Pawan Gajjar 8890300 */
+.contact-us-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-us-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section {
+  flex: 1;
+  padding: 3rem;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #1a2b49;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #6200ee;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #5000c7;
+}
+
+.company-info-section {
+  flex: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero-image.avif');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.company-info-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.company-info-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.info-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  margin-bottom: 2rem;
+}
+
+.contact-details p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-us-content {
+    flex-direction: column;
+  }
+
+  .contact-form-section,
+  .company-info-section {
+    padding: 2rem;
+  }
+
+  .company-info-section {
+    background-position: top center;
+  }
+}

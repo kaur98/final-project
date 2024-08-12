@@ -1,0 +1,112 @@
+/* Pawan Gajjar 8890300 */
+.hero-section {
+  background-color: #f7fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.home-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 80px);
+  min-height: 550px;
+}
+
+.home-hero-left {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.home-hero-title {
+  font-size: 48px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.home-hero-title-highlight {
+  color: #7c3aed;
+  display: block;
+}
+
+.home-hero-description {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.home-hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.home-hero-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-hero-button-primary {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+}
+
+.home-hero-button-primary:hover {
+  background-color: #6d28d9;
+}
+
+.home-hero-button-secondary {
+  background-color: #e5e7eb;
+  color: #1e3a8a;
+  border: none;
+}
+
+.home-hero-button-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.home-hero-right {
+  flex: 1;
+}
+
+.home-hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .home-hero-content {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .home-hero-left {
+    padding-right: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .home-hero-right {
+    margin-top: 40px;
+  }
+
+  .home-hero-title {
+    font-size: 36px;
+  }
+
+  .home-hero-description {
+    font-size: 16px;
+  }
+}
