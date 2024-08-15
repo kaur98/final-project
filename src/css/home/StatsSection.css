@@ -1,10 +1,10 @@
 /* Pawan Gajjar 8890300 */
-.hotel-hero {
+.stats-hero {
   padding: 4rem 2rem;
   background-color: #f8f9fa;
 }
 
-.hotel-hero-container {
+.stats-hero-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -12,80 +12,143 @@
   gap: 4rem;
 }
 
-.hotel-hero-image {
+.stats-hero-image {
   flex: 1;
 }
 
-.hotel-hero-img {
+.stats-hero-img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hotel-hero-content {
+.stats-hero-content {
   flex: 1;
 }
 
-.hotel-hero-title {
+.stats-hero-title {
   font-size: 3rem;
   color: #1e3a8a;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
-.hotel-hero-description {
+.stats-hero-description {
   font-size: 1rem;
   color: #6b7280;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
 
-.hotel-hero-stats {
+.stats-hero-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-.hotel-hero-stat {
+.stats-hero-stat {
   display: flex;
   flex-direction: column;
 }
 
-.hotel-hero-stat-number {
+.stats-hero-stat-number {
   font-size: 2rem;
   font-weight: bold;
   color: #7c3aed;
 }
 
-.hotel-hero-stat-label {
+.stats-hero-stat-label {
   font-size: 1rem;
   color: #4b5563;
 }
 
+/* Animation keyframes */
+@keyframes stats-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes stats-slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes stats-popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation classes */
+.stats-animate-fade-in {
+  animation: stats-fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.stats-animate-slide-in {
+  animation: stats-slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.stats-animate-pop-in {
+  animation: stats-popIn 0.5s cubic-bezier(0.26, 0.53, 0.74, 1.48) forwards;
+  opacity: 0;
+}
+
+/* Delay classes for staggered animations */
+.stats-hero-image {
+  animation-delay: 0.2s;
+}
+
+.stats-hero-title {
+  animation-delay: 0.4s;
+}
+
+.stats-hero-description {
+  animation-delay: 0.6s;
+}
+
 @media (max-width: 1024px) {
-  .hotel-hero-container {
+  .stats-hero-container {
     flex-direction: column;
   }
 
-  .hotel-hero-image,
-  .hotel-hero-content {
+  .stats-hero-image,
+  .stats-hero-content {
     flex: none;
     width: 100%;
   }
 }
 
 @media (max-width: 640px) {
-  .hotel-hero {
+  .stats-hero {
     padding: 2rem 1rem;
   }
 
-  .hotel-hero-title {
+  .stats-hero-title {
     font-size: 2rem;
   }
 
-  .hotel-hero-stats {
-    /* grid-template-columns: 1fr; */
+  .stats-hero-stats {
     gap: 1rem;
     text-align: center;
   }

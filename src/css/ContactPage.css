@@ -1,5 +1,6 @@
 /* Pawan Gajjar 8890300 */
-.contact-us-container {
+
+.cp-contact-us-container {
   background-color: #f8f9fa;
   min-height: 100vh;
   display: flex;
@@ -8,7 +9,7 @@
   padding: 2rem;
 }
 
-.contact-us-content {
+.cp-contact-us-content {
   display: flex;
   max-width: 1200px;
   width: 100%;
@@ -18,29 +19,29 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form-section {
+.cp-contact-form-section {
   flex: 1;
   padding: 3rem;
 }
 
-.contact-title {
+.cp-contact-title {
   font-size: 2.5rem;
   color: #1a2b49;
   margin-bottom: 1rem;
 }
 
-.contact-subtitle {
+.cp-contact-subtitle {
   color: #4a5568;
   margin-bottom: 2rem;
 }
 
-.contact-form {
+.cp-contact-form {
   display: flex;
   flex-direction: column;
 }
 
-.contact-form input,
-.contact-form textarea {
+.cp-contact-form input,
+.cp-contact-form textarea {
   margin-bottom: 1rem;
   padding: 0.75rem;
   border: 1px solid #e2e8f0;
@@ -48,12 +49,12 @@
   font-size: 1rem;
 }
 
-.contact-form textarea {
+.cp-contact-form textarea {
   height: 150px;
   resize: vertical;
 }
 
-.submit-button {
+.cp-submit-button {
   background-color: #6200ee;
   color: #ffffff;
   border: none;
@@ -65,11 +66,11 @@
   transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
+.cp-submit-button:hover {
   background-color: #5000c7;
 }
 
-.company-info-section {
+.cp-company-info-section {
   flex: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/hero-image.avif');
@@ -83,7 +84,7 @@
   position: relative;
 }
 
-.company-info-section::before {
+.cp-company-info-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -94,35 +95,94 @@
   z-index: 1;
 }
 
-.company-info-section > * {
+.cp-company-info-section > * {
   position: relative;
   z-index: 2;
 }
 
-.info-title {
+.cp-info-title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.info-text {
+.cp-info-text {
   margin-bottom: 2rem;
 }
 
-.contact-details p {
+.cp-contact-details p {
   margin-bottom: 0.5rem;
 }
 
+/* New styles for map section */
+.cp-map-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.cp-map-title {
+  font-size: 2.5rem;
+  color: #1a2b49;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cp-map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* New styles for FAQ section */
+.cp-faq-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.cp-faq-title {
+  font-size: 2.5rem;
+  color: #1a2b49;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cp-faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cp-faq-item {
+  margin-bottom: 2rem;
+}
+
+.cp-faq-question {
+  font-size: 1.25rem;
+  color: #1a2b49;
+  margin-bottom: 0.5rem;
+}
+
+.cp-faq-answer {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
-  .contact-us-content {
+  .cp-contact-us-content {
     flex-direction: column;
   }
 
-  .contact-form-section,
-  .company-info-section {
+  .cp-contact-form-section,
+  .cp-company-info-section {
     padding: 2rem;
   }
 
-  .company-info-section {
+  .cp-company-info-section {
     background-position: top center;
+  }
+
+  .cp-map-section,
+  .cp-faq-section {
+    padding: 2rem 1rem;
   }
 }

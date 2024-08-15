@@ -3,13 +3,13 @@
   background-color: #f7fafc;
 }
 
-.container {
+.hero-section .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 20px;
 }
 
-.home-hero-content {
+.hero-section .home-hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,96 +17,170 @@
   min-height: 550px;
 }
 
-.home-hero-left {
+.hero-section .home-hero-left {
   flex: 1;
   padding-right: 40px;
 }
 
-.home-hero-title {
+.hero-section .home-hero-title {
   font-size: 48px;
   color: #1e3a8a;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
-.home-hero-title-highlight {
+.hero-section .home-hero-title-highlight {
   color: #7c3aed;
   display: block;
 }
 
-.home-hero-description {
+.hero-section .home-hero-description {
   font-size: 18px;
   color: #4b5563;
   margin-bottom: 30px;
   line-height: 1.5;
 }
 
-.home-hero-buttons {
+.hero-section .home-hero-buttons {
   display: flex;
   gap: 20px;
 }
 
-.home-hero-button {
+.hero-section .home-hero-button {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.home-hero-button-primary {
+.hero-section .home-hero-button-primary {
   background-color: #7c3aed;
   color: white;
   border: none;
 }
 
-.home-hero-button-primary:hover {
+.hero-section .home-hero-button-primary:hover {
   background-color: #6d28d9;
+  transform: translateY(-2px);
 }
 
-.home-hero-button-secondary {
+.hero-section .home-hero-button-secondary {
   background-color: #e5e7eb;
   color: #1e3a8a;
   border: none;
 }
 
-.home-hero-button-secondary:hover {
+.hero-section .home-hero-button-secondary:hover {
   background-color: #d1d5db;
+  transform: translateY(-2px);
 }
 
-.home-hero-right {
+.hero-section .home-hero-right {
   flex: 1;
 }
 
-.home-hero-image {
+.hero-section .home-hero-image {
   width: 100%;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
 }
 
+/* Animation keyframes */
+@keyframes hero-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation classes */
+.hero-section .animate-fade-in {
+  animation: hero-fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-section .animate-slide-in {
+  animation: hero-slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-section .animate-pop-in {
+  animation: hero-popIn 0.5s cubic-bezier(0.26, 0.53, 0.74, 1.48) forwards;
+  opacity: 0;
+}
+
+/* Delay classes for staggered animations */
+.hero-section .home-hero-title {
+  animation-delay: 0.2s;
+}
+
+.hero-section .home-hero-title-highlight {
+  animation-delay: 0.4s;
+}
+
+.hero-section .home-hero-description {
+  animation-delay: 0.6s;
+}
+
+.hero-section .home-hero-buttons {
+  animation-delay: 0.8s;
+}
+
+.hero-section .home-hero-image {
+  animation-delay: 1s;
+}
+
 @media (max-width: 768px) {
-  .home-hero-content {
-    flex-direction: column;
+  .hero-section .home-hero-content {
     flex-direction: column-reverse;
     height: auto;
   }
 
-  .home-hero-left {
+  .hero-section .home-hero-left {
     padding-right: 0;
     margin-bottom: 40px;
     margin-top: 40px;
   }
-  .home-hero-right {
+
+  .hero-section .home-hero-right {
     margin-top: 40px;
   }
 
-  .home-hero-title {
+  .hero-section .home-hero-title {
     font-size: 36px;
   }
 
-  .home-hero-description {
+  .hero-section .home-hero-description {
     font-size: 16px;
   }
 }

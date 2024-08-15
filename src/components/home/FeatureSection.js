@@ -1,4 +1,4 @@
-// Pawan Gajjar 8890300
+// Pavan Gajjar 8890300
 import React from 'react';
 import { Shield, Headphones, Sliders } from 'lucide-react';
 import { Link } from 'react-router-dom';
