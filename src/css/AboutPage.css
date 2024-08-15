@@ -193,3 +193,100 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Team Section */
+.about-us-team {
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+
+.about-us-team h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.about-us-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.about-us-team-member {
+  text-align: center;
+}
+
+.about-us-team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about-us-team-member h3 {
+  font-size: 20px;
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+.about-us-team-member p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* Testimonials Section */
+.about-us-testimonials {
+  margin-bottom: 60px;
+}
+
+.about-us-testimonials h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.about-us-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about-us-testimonial {
+  background-color: #f3f4f6;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about-us-testimonial-stars {
+  color: #fbbf24;
+  margin-bottom: 15px;
+}
+
+.about-us-testimonial p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+
+.about-us-testimonial h4 {
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .about-us-team-grid,
+  .about-us-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-team-grid,
+  .about-us-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

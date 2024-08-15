@@ -1,15 +1,13 @@
 // Rajveer kaur 8871247
 import React from 'react';
-import { Shield, Headset, Compass } from 'lucide-react';
-import '../css/AboutPage.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import { Shield, Headset, Compass, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Layout from '../components/Layout';
+import '../css/AboutPage.css';
 
 const AboutPage = () => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <div className="about-us-container">
         <section className="about-us-hero">
           <div className="about-us-content">
@@ -78,9 +76,94 @@ const AboutPage = () => {
             </div>
           </div>
         </section>
+
+        <section className="about-us-team">
+          <h2>Meet Our Team</h2>
+          <div className="about-us-team-grid">
+            <div className="about-us-team-member">
+              <img
+                src={require('../images/members/member3.jpg')}
+                alt="Team Member 1"
+              />
+              <h3>Emily</h3>
+              <p>CEO & Founder</p>
+            </div>
+            <div className="about-us-team-member">
+              <img
+                src={require('../images/members/member1.webp')}
+                alt="Team Member 2"
+              />
+              <h3>David</h3>
+              <p>Head of Operations</p>
+            </div>
+            <div className="about-us-team-member">
+              <img
+                src={require('../images/members/member4.webp')}
+                alt="Team Member 3"
+              />
+              <h3>Jane</h3>
+              <p>Customer Experience Manager</p>
+            </div>
+            <div className="about-us-team-member">
+              <img
+                src={require('../images/members/member2.jpg')}
+                alt="Team Member 4"
+              />
+              <h3>John</h3>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="about-us-testimonials">
+          <h2>What Our Guests Say</h2>
+          <div className="about-us-testimonials-grid">
+            <div className="about-us-testimonial">
+              <div className="about-us-testimonial-stars">
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+              </div>
+              <p>
+                "An unforgettable experience! The staff went above and beyond to
+                make our stay perfect."
+              </p>
+              <h4>Sarah L.</h4>
+            </div>
+            <div className="about-us-testimonial">
+              <div className="about-us-testimonial-stars">
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+              </div>
+              <p>
+                "Luxurious accommodations and world-class service. We'll
+                definitely be returning!"
+              </p>
+              <h4>Mark R.</h4>
+            </div>
+            <div className="about-us-testimonial">
+              <div className="about-us-testimonial-stars">
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+              </div>
+              <p>
+                "The attention to detail in every aspect of our stay was truly
+                impressive."
+              </p>
+              <h4>Jessica T.</h4>
+            </div>
+          </div>
+        </section>
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
