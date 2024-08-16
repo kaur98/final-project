@@ -8,6 +8,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="home-hero-content">
           <div className="home-hero-left">
+            {/* Main heading and description for the hero section */}
             <h1 className="home-hero-title animate-fade-in">
               Find Perfect Hotels
               <span className="home-hero-title-highlight animate-slide-in">
@@ -28,6 +29,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="home-hero-right">
+            {/* Hero image illustrating the service */}
             <img
               src={require('../../images/hero-image.avif')}
               alt="Hotel"

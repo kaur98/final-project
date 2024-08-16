@@ -8,6 +8,7 @@ const FeatureSection = () => {
   return (
     <section className="feature-section">
       <div className="feature-container">
+        {/* Feature items highlighting key aspects of the service */}
         <div className="feature-item">
           <div className="feature-icon-wrapper">
             <Shield className="feature-icon" />

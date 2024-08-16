@@ -1,3 +1,4 @@
+// Pavan Gajjar 8890300
 import React, { useState } from 'react';
 import '../../css/home/QuestionsSection.css';
 
@@ -57,6 +58,7 @@ const QuestionsSection = () => {
                   {expandedQuestion === question.id ? '−' : '+'}
                 </span>
               </button>
+              {/* Conditionally render the answer if the question is expanded */}
               {expandedQuestion === question.id && (
                 <div className="question-answer">{question.answer}</div>
               )}

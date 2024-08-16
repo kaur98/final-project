@@ -6,6 +6,7 @@ const StatsSection = () => {
   return (
     <section className="stats-hero">
       <div className="stats-hero-container">
+        {/* Background image with fade-in animation */}
         <div className="stats-hero-image stats-animate-fade-in">
           <img
             src={require('../../images/stats-section.avif')}

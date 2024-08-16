@@ -23,6 +23,7 @@ const ContactPage = () => {
     <Layout>
       <div className="cp-contact-us-container">
         <div className="cp-contact-us-content">
+          {/* Contact form section */}
           <div className="cp-contact-form-section">
             <h1 className="cp-contact-title">Get in Touch</h1>
             <p className="cp-contact-subtitle">
@@ -58,6 +59,8 @@ const ContactPage = () => {
               </button>
             </form>
           </div>
+
+          {/* Company information section */}
           <div className="cp-company-info-section">
             <h2 className="cp-info-title">Our Information</h2>
             <p className="cp-info-text">
@@ -80,6 +83,7 @@ const ContactPage = () => {
         </div>
       </div>
 
+      {/* Map section showing the location */}
       <div className="cp-map-section">
         <h2 className="cp-map-title">Find Us</h2>
         <div className="cp-map-container">
@@ -95,6 +99,7 @@ const ContactPage = () => {
         </div>
       </div>
 
+      {/* FAQ section */}
       <div className="cp-faq-section">
         <h2 className="cp-faq-title">Frequently Asked Questions</h2>
         <div className="cp-faq-container">

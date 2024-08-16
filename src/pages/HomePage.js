@@ -9,9 +9,16 @@ import Layout from '../components/Layout';
 export default function HomePage() {
   return (
     <Layout>
+      {/* Hero section at the top of the homepage */}
       <Hero />
+
+      {/* Section showcasing key features of the service */}
       <FeatureSection />
+
+      {/* Section displaying various statistics or metrics */}
       <StatsSection />
+
+      {/* Section addressing common questions or concerns */}
       <QuestionsSection />
     </Layout>
   );
