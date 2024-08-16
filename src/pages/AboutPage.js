@@ -9,6 +9,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="about-us-container">
+        {/* Hero section with a brief introduction and call-to-action buttons */}
         <section className="about-us-hero">
           <div className="about-us-content">
             <h1 className="about-us-title">
@@ -31,6 +32,7 @@ const AboutPage = () => {
           </div>
         </section>
 
+        {/* Mission statement section outlining the company's goals and objectives */}
         <section className="about-us-mission">
           <h2>Our Mission</h2>
           <p>
@@ -39,6 +41,7 @@ const AboutPage = () => {
           </p>
         </section>
 
+        {/* Values section detailing the core principles and commitments of the company */}
         <section className="about-us-values">
           <h2>Our Values</h2>
           <div className="about-us-values-grid">
@@ -77,6 +80,7 @@ const AboutPage = () => {
           </div>
         </section>
 
+        {/* Team section introducing key team members */}
         <section className="about-us-team">
           <h2>Meet Our Team</h2>
           <div className="about-us-team-grid">
@@ -115,6 +119,7 @@ const AboutPage = () => {
           </div>
         </section>
 
+        {/* Testimonials section featuring guest reviews and feedback */}
         <section className="about-us-testimonials">
           <h2>What Our Guests Say</h2>
           <div className="about-us-testimonials-grid">

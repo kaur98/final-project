@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import '../../css/tours/HotelsSection.css';
 
+// Array of hotel data to be displayed
 const hotels = [
   {
     id: 1,

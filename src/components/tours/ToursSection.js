@@ -3,6 +3,7 @@ import React from 'react';
 import { TrendingUp, Clock, MapPin } from 'lucide-react';
 import '../../css/tours/ToursSection.css';
 
+// Array of tour data to be displayed
 const tours = [
   {
     id: 1,
